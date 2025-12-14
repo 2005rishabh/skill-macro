@@ -20,9 +20,10 @@ const skillAttemptSchema = new mongoose.Schema(
             required: true,
         },
         aiEvaluation: {
-            type: String,
+            type: Object,
             required: true,
         },
+
     },
     { timestamps: true }
 );
