@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const skillAttemptSchema = new mongoose.Schema(
     {
@@ -28,6 +28,5 @@ const skillAttemptSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports =
-    mongoose.models.SkillAttempt ||
+export default mongoose.models.SkillAttempt ||
     mongoose.model("SkillAttempt", skillAttemptSchema);
