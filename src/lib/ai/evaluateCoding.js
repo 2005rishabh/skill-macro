@@ -1,7 +1,7 @@
 import { generateJSON } from "./client";
 
 export async function evaluateCoding({ taskPrompt, userCode }) {
-    const prompt = `
+  const prompt = `
 You are a strict coding evaluator.
 
 TASK:
@@ -27,6 +27,5 @@ Return ONLY valid JSON:
   "improvementPlan": [string]
 }
 `;
-
-    return await generateJSON(prompt);
+  return await generateJSON(prompt);
 }
